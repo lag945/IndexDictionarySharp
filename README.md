@@ -4,7 +4,7 @@ Because the order of the keys in the Dictionary<TKey,TValue>.KeyCollection is un
 
 | Method | Dictionary | SortedDictionary| IndexDictionary|
 | :--- | :--- | :--- |:--- |
-| Add | O(1) | O(log n)) | O(1) |
+| Add | O(1) | O(log n) | O(1) |
 | Remove | O(1) | O(log n) | O(n) |
 | Keys | O(1) | O(1) | O(1) |
 | TryGetValue | O(1) | O(log n) | O(1) |
