@@ -1,6 +1,6 @@
 # IndexDictionarySharp
 Because the order of the keys in the Dictionary<TKey,TValue>.KeyCollection is unspecified[1], so I modify Dictionary to perform the order of the keys is order by insertion index.
-[Explaination on Medium]()
+[Explaination on Medium](https://medium.com/@lag945/c-dictionary-keys%E6%8E%92%E5%BA%8F%E6%B7%BA%E8%AB%87-58bfa45631d9)
 
 # Comparison of HashMap's order of keys
 | Class | Language | Order|
@@ -26,13 +26,13 @@ Because the order of the keys in the Dictionary<TKey,TValue>.KeyCollection is un
 ```
 Dictionary.Add(1);
 Dictionary.Add(2);
-Dictionary.Remove(2);
+Dictionary.Remove(1);
 Dictionary.Add(3);
 Dictionary.Keys = 3,2
 
 IndexDictionary.Add(1);
 IndexDictionary.Add(2);
-IndexDictionary.Remove(2);
+IndexDictionary.Remove(1);
 IndexDictionary.Add(3);
 IndexDictionary.Keys = 2,3
 ```
