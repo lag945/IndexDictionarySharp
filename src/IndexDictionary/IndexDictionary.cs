@@ -22,7 +22,16 @@ namespace System.Collections.Generic
             m_List = new List<TKey>(capacity);
         }
 
-        public TValue this[TKey key] { get => m_Dictionary[key]; set => m_Dictionary[key] = value; }
+        public TValue this[TKey key]
+        {
+            get => m_Dictionary[key];
+            set
+            {
+                if (!m_Dictionary.ContainsKey(key))
+                    m_List.Add(key);
+                m_Dictionary[key] = value;
+            }
+        }
 
         public ICollection<TKey> Keys => m_List;
 

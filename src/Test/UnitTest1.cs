@@ -35,5 +35,20 @@ namespace Test
             dic.TryGetValueByIndex(1, out value);
             Assert.AreEqual(value, 2);
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            IndexDictionary<int, int> dic = new IndexDictionary<int, int>();
+            dic[1] = 1;
+            List<int> expected = new List<int>(new int[] { 1 });
+            int index = 0;
+            foreach (int key in dic.Keys)
+            {
+                Assert.AreEqual(expected[index++], key);
+            }
+
+            Assert.AreEqual(1, index);
+        }
     }
 }
