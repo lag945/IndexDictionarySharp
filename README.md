@@ -2,6 +2,18 @@
 Because the order of the keys in the Dictionary<TKey,TValue>.KeyCollection is unspecified[1], so I modify Dictionary to perform the order of the keys is order by insertion index.
 [Explaination on Medium]()
 
+# Comparison of HashMap's order of keys
+| Class | Language | Order|
+| :--- | :--- | :--- |
+| std::map | C++ | key |
+| std::unordered_map | C++ | unspecified |
+| CMap | C++ | not predictable |
+| Dictionary | C# | [unspecified](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.keys) |
+| SortedDictionary | C# | key |
+| IndexDictionary | C# | insertion index |
+
+
+# Time Complexity
 | Method | Dictionary | SortedDictionary| IndexDictionary|
 | :--- | :--- | :--- |:--- |
 | Add | O(1) | O(log n) | O(1) |
