@@ -2,8 +2,8 @@
 Because the order of the keys in the Dictionary<TKey,TValue>.KeyCollection is unspecified[1], so I modify Dictionary to perform the order of the keys is order by insertion index.
 [Explaination on Medium]()
 
-| Method | Dictionary | SortedDictionary| IndexDictionary
-| :--- | :--- | :--- |
+| Method | Dictionary | SortedDictionary| IndexDictionary|
+| :--- | :--- | :--- |:--- |
 | Add | O(1) | O(log n)) | O(1) |
 | Remove | O(1) | O(log n) | O(n) |
 | Keys | O(1) | O(1) | O(1) |
