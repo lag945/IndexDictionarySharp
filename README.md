@@ -1,6 +1,6 @@
 # IndexDictionarySharp
-Because the order of the keys in the Dictionary<TKey,TValue>.KeyCollection is unspecified[1], so I modify Dictionary to perform the order of the keys is order by insertion index.
-[Explaination on Medium](https://medium.com/@lag945/c-dictionary-keys%E6%8E%92%E5%BA%8F%E6%B7%BA%E8%AB%87-58bfa45631d9)
+- Because the order of the keys in the Dictionary<TKey,TValue>.KeyCollection is unspecified[1], so I modify Dictionary to perform the order of the keys is order by insertion index.![GitHub Actions](https://github.com/lag945/IndexDictionarySharp/workflows/.NET/badge.svg?branch=main) ![Release](https://img.shields.io/github/v/release/lag945/IndexDictionarySharp)
+- [Explaination on Medium](https://medium.com/@lag945/c-dictionary-keys%E6%8E%92%E5%BA%8F%E6%B7%BA%E8%AB%87-58bfa45631d9)
 
 # Comparison of HashMap's order of keys
 | Class | Language | Order|
