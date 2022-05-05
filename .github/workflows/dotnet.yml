@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 3.1
     - name: Restore dependencies
-      run: dotnet restore src/IndexDictionarySharp
+      run: dotnet restore src/IndexDictionarySharp.sln
     - name: Build
-      run: dotnet build --no-restore src/IndexDictionarySharp
+      run: dotnet build --no-restore src/IndexDictionarySharp.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal src/IndexDictionarySharp
+      run: dotnet test --no-build --verbosity normal src/IndexDictionarySharp.sln
