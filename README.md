@@ -23,6 +23,7 @@
 | TryGetValue | O(1) | O(log n) | O(1) |
 | TryGetValueByIndex | N/A | N/A | O(1) |
 
+# Test Case
 ```
 Dictionary.Add(1);
 Dictionary.Add(2);
