@@ -40,4 +40,4 @@ IndexDictionary.Keys = 2,3
 ## Reference
 1. [dictionary keys](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.keys)
 1. [dictionary source](https://github.com/microsoft/referencesource/blob/master/mscorlib/system/collections/generic/dictionary.cs)
-1. [Collision Resolution in the Dictionary Class](https://docs.microsoft.com/en-us/previous-versions/ms379571)
+1. [Collision Resolution in the Dictionary Class](https://docs.microsoft.com/en-us/previous-versions/ms379571(v=vs.80))

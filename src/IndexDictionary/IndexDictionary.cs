@@ -7,8 +7,8 @@ namespace System.Collections.Generic
 {
     public class IndexDictionary<TKey, TValue> : IDictionary<TKey, TValue>
     {
-        Dictionary<TKey, TValue> m_Dictionary = null;
-        List<TKey> m_List = null;
+        readonly Dictionary<TKey, TValue> m_Dictionary = null;
+        readonly List<TKey> m_List = null;
 
         public IndexDictionary() : this(0, null) { }
 
@@ -75,8 +75,6 @@ namespace System.Collections.Generic
 
         public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
         {
-            int count = m_Dictionary.Count;
-
             foreach (TKey key in m_Dictionary.Keys)
             {
                 array[arrayIndex++] = new KeyValuePair<TKey, TValue>(key, m_Dictionary[key]);

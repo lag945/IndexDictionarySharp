@@ -2,6 +2,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System;
 
+#pragma warning disable IDE0028
+
 namespace Test
 {
     [TestClass]
@@ -10,8 +12,7 @@ namespace Test
         [TestMethod]
         public void TestMethod1()
         {
-            //Dictionary<int, int> dic = new Dictionary<int, int>();
-            IndexDictionary<int, int> dic = new IndexDictionary<int, int>();
+            IndexDictionary<int, int> dic = new IndexDictionary<int, int> ();
             dic.Add(1, 1);
             dic.Add(2, 1);
             dic.Remove(1);
@@ -33,7 +34,7 @@ namespace Test
             dic.Add(2, 2);
             int value;
             dic.TryGetValueByIndex(1, out value);
-            Assert.AreEqual(value, 2);
+            Assert.AreEqual(2, value);
         }
 
         [TestMethod]
@@ -52,3 +53,5 @@ namespace Test
         }
     }
 }
+
+#pragma warning restore IDE0028
